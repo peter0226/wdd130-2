@@ -36,7 +36,7 @@ nav a{
 }
 .book:hover, .join:hover{
     background-color:#FB8500;  
-    color:#023047;
+    color:white;
 }
 
 .msg{
