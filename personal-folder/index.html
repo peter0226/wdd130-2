@@ -20,9 +20,56 @@
                 <a href="site-plan.html">Site Plan</a>
             </nav>
         </header>
-        <div style="min-height: 42vh;">
-            
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/image_home.jpg" alt="People enjoying white water rafting">
+            </div>
+            <section id="hero-msg">
+                <br>
+                <h1 class="home-title">Folklor Gratia</h1>
+                <h4>Join us to celebrate the anniversary of the Mexican Folkloric Ballet in one of Mexico's most iconic cultural institutions! The event will take place at the Palacio de Bellas Artes in Mexico City on September 15th, 16th, and 17th, 2023. Don't miss this unique opportunity to experience Mexico's rich cultural heritage! </h4>
+                <div class='button-box'>
+                    <a class='book' href="tickets.html">Get Tickets</a>
+                </div>
+            </section>
         </div>
+        <main class="home-grid">
+            <section class="rivers-card">
+                <img class="card-img" src="images/image_home2.jpg" alt="river in forest">
+                <h2>Guerrero</h2>
+            </section>
+            <section class="camping-card">
+                <img class="card-img" src="images/image_home3.jpg" alt="tent in mountains">
+                <h2>Oaxaca</h2>
+            </section>
+            <section class="rapids-card">
+                <img class="card-img" src="images/image_home4.jpg" alt="rafting boat">
+                <h2>Veracruz</h2>
+            </section>
+            <div id="background"></div> 
+            <img class="mountains" src="images/ticket_page2.jpg" alt="Misty mountains">
+            <section class="msg">
+                <h1>Get Tickets</h1>
+                <form>
+                    
+                    <label>Date:</label>
+                    <input type="date" name="fecha">
+                    <br>
+                    <label>Hour:</label>
+                    <input type="time" name="hora">
+                    <br>
+                    <label>Quantity:</label>
+                    <input type="number" name="cantidad" min="1" max="10">
+                    <br>
+                    <label>Type:</label>
+                    <input type="radio" name="tipo" value="vip" checked>VIP
+                    <input type="radio" name="tipo" value="general">General
+                    <br>
+                    
+                  </form>
+                  <button class='join' type="submit">Buy</button>
+            </section>
+        </main>
         
         <footer>
             <p>Folklor Gratia &copy; 2023 - Pedro Pastor</p>

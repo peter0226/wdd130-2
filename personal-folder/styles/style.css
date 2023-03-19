@@ -30,6 +30,7 @@ nav {
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 4fr;
     margin-top: -100px; 
 }
 
@@ -39,10 +40,24 @@ nav {
     z-index: -1;
 }
 
+#hero-box {
+    background: rgba(0, 0, 0, 0.7) url('../images/image_home.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.hero-box:hover::before {
+    opacity: 1;
+  }
+
+
 #hero-msg {
     grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 100px;
+    grid-row: 2/3;
+    /*margin-top: 100px;*/
 }
 
 #hero-msg h4 {
@@ -92,7 +107,7 @@ nav {
 /*from column lines 6–10 and row lines 6–7*/
 .msg{
     /*background-color:#126782;*/
-    background-color: #023047;
+    background-color: #D3D0CB;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10; 
@@ -107,6 +122,10 @@ h2 {
 .home-title,.msg h2{
     font-family:"Comfortaa",Montserrat,Helvetica;
     font-size: 2em;
+}
+
+h4{
+    font-family: monospace;
 }
 
 p{
@@ -125,7 +144,7 @@ nav a, #hero-msg h1, #hero-msg h4 ,.button-box ,main section{
 
 #background {
     height: 725px;
-    background-color:#126782; 
+    background-color:#587B7F; 
 }
 
 #logo_link{
@@ -198,12 +217,35 @@ h4{
 }
 
 .rivers-card, .camping-card, .rapids-card{
-    margin: 200px 0;
+    margin: 100px 0;
 }
 
 .social>a>img{
     width: 32px;
 }
+
+/*form*/
+
+  
+  /*form > h1 {
+    text-align: center;
+  }*/
+  
+  form > label {
+    width: 86px;
+    display: inline-block;
+  }
+  
+  form > input[type=date], input[type=time], input[type=number] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+
+
 
 footer{
     background-color:#1E2019;
@@ -238,6 +280,7 @@ footer .social img{
 
 #hero-img{
     width: 100%;
+    opacity: 0;
 }
 
 footer p {
